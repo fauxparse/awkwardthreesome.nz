@@ -1,0 +1,12 @@
+@mixin small-caps {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: modular-scale(-1);
+  font-family: $base-font-family;
+  color: $secondary-font-color;
+}
+
+@mixin antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

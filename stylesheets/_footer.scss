@@ -1,0 +1,14 @@
+footer {
+  @include full-width-section;
+  background: $dark-grey;
+  color: rgba(white, 0.75);
+  padding-bottom: 6em;
+
+  p {
+    font-size: modular-scale(0);
+  }
+
+  a {
+    color: white;
+  }
+}

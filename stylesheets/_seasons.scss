@@ -1,0 +1,132 @@
+.season {
+  @include full-width-section;
+  border-top: 1px solid $accent-color;
+
+  h2 {
+    font-size: modular-scale(3);
+    color: $accent-color;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: modular-scale(1);
+    font-family: $base-font-family;
+    line-height: $base-line-height;
+    margin: 0;
+  }
+
+  h4 {
+    @include small-caps;
+    font-size: modular-scale(0);
+    line-height: $base-line-height;
+  }
+}
+
+.shows {
+  margin: 0 (-$small-spacing);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.show {
+  flex: 1 0 16em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: $small-spacing;
+
+  .portrait {
+    @include size(4em);
+    margin-right: $small-spacing;
+    border: 0.25em solid $accent-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:empty {
+      border-style: dotted;
+
+      &::before {
+        content: '?';
+        color: rgba($accent-color, 0.5);
+        font-size: modular-scale(4);
+        font-weight: bold;
+        line-height: 1;
+        text-rendering: optimizeLegibility;
+      }
+    }
+  }
+
+  .performer {
+    flex: 1;
+  }
+
+  .name {
+    font-size: modular-scale(2);
+    color: $accent-color;
+    font-family: $heading-font-family;
+    line-height: 1;
+    margin-bottom: 0.25em;
+  }
+
+  .date,
+  .origin {
+    @include small-caps;
+  }
+}
+
+.buy-tickets {
+  @include antialiased;
+  background: $accent-color;
+  color: white;
+  font-weight: bold;
+  font-size: modular-scale(1);
+  text-decoration: none;
+  padding: 0.25em $small-spacing;
+  display: inline-block;
+  margin: 0 0 $small-spacing;
+  border-radius: $base-border-radius;
+  transition: all $fast-duration $base-timing;
+
+  &:hover {
+    color: white;
+    transform: scale(1.05);
+  }
+}
+
+.current.season {
+  @include antialiased;
+  border-top: none;
+  background: $accent-color;
+  color: white;
+
+  .buy-tickets {
+    background-color: white;
+    color: $accent-color;
+  }
+
+  .portrait {
+    border-color: white;
+
+    &:empty::before {
+      color: rgba(white, 0.5);
+    }
+  }
+
+  h2,
+  .name {
+    color: white;
+  }
+
+  h3,
+  h4,
+  .date,
+  .origin {
+    color: rgba(white, 0.75);
+  }
+}

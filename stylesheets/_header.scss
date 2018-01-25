@@ -1,0 +1,85 @@
+header {
+  @include full-width-section;
+  background: $medium-grey;
+  padding-bottom: 0;
+
+  h1 {
+    font-size: 13.85vw;
+    line-height: 1;
+    margin: 0 0 0.1em;
+    color: $accent-color;
+    text-align: center;
+
+    @media screen and (min-width: #{100 * 7.5em / 13.85}) {
+      font-size: 7.5em;
+    }
+    // font-size: 13calc(min(13.85vw, 7.5em));
+  }
+
+  p {
+    &:first-of-type {
+      font-size: modular-scale(1);
+    }
+  }
+
+  .hero {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 33.25em;
+    margin: 0 auto;
+  }
+
+  blockquote {
+    @include small-caps;
+    @include antialiased;
+    font-size: modular-scale(0);
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+  }
+
+  @include desktop {
+    padding-bottom: 0;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    blockquote,
+    h1 {
+      grid-column-end: span 2;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero {
+      margin-top: -2em;
+    }
+  }
+}
+
+.review-quote {
+  @include full-width-section;
+  @include antialiased;
+  background-color: $accent-color;
+  color: white;
+  margin: 0;
+
+  p {
+    font-size: modular-scale(1);
+    font-weight: bold;
+  }
+
+  cite {
+    @include small-caps;
+    font-size: modular-scale(0);
+    font-style: normal;
+  }
+
+  a {
+    text-decoration: none;
+    text-align: right;
+    color: rgba(white, 0.75);
+  }
+}

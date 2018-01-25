@@ -1,0 +1,16 @@
+$max-line-width: 48em;
+
+@mixin desktop {
+  @media screen and (min-width: #{$base-spacing * 2 + $max-line-width}) {
+    @content;
+  }
+}
+
+@mixin full-width-section {
+  padding: $base-spacing;
+
+  @include desktop {
+    padding-left: calc((100vw - #{$max-line-width}) / 2);
+    padding-right: calc((100vw - #{$max-line-width}) / 2);
+  }
+}
