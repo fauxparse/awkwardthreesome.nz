@@ -47,6 +47,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
 
     &:empty {
       border-style: dotted;
