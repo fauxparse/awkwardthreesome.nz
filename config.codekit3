@@ -7,15 +7,8 @@
 		"uuidString": "7FC343A6-0944-4FA4-B320-F57E59485180"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26330",
 "files": {
-	"\/.index.html.swp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/.index.html.swp",
-		"oF": 0
-		},
 	"\/css\/threesome.css": {
 		"aP": 1,
 		"bl": 0,
@@ -113,13 +106,6 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
-	"\/stylesheets\/.threesome.scss.swp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/stylesheets\/.threesome.scss.swp",
-		"oF": 0
-		},
 	"\/stylesheets\/_footer.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -168,6 +154,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/stylesheets\/_normalize.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/stylesheets\/_overlay.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/stylesheets\/_overlay.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -397,6 +396,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -960,6 +960,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,

@@ -17,7 +17,7 @@ $blue: #1565c0;
 $pink: #ec008c;
 $medium-grey: #b7b5c2;
 $dark-grey: darken($medium-grey, 40);
-$light-grey: lighten($medium-grey, 30);
+$light-grey: lighten($medium-grey, 20);
 
 // Font Colors
 $base-font-color: $dark-grey;
@@ -42,4 +42,5 @@ $focus-outline-offset: 2px;
 // Animations
 $base-duration: 150ms;
 $fast-duration: #{$base-duration / 2};
+$slow-duration: #{$base-duration * 2};
 $base-timing: ease;

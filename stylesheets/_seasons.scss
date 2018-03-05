@@ -87,7 +87,7 @@
   }
 }
 
-.buy-tickets {
+.button {
   @include antialiased;
   background: $accent-color;
   color: white;
@@ -99,6 +99,7 @@
   margin: 0 0 $small-spacing;
   border-radius: $base-border-radius;
   transition: all $fast-duration $base-timing;
+  cursor: pointer;
 
   &:hover {
     color: white;

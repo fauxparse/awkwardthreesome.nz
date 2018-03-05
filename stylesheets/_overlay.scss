@@ -1,0 +1,103 @@
+.overlay-backdrop {
+  @include position(fixed, 0 0 0 0);
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color $slow-duration $base-timing;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  touch-action: none;
+}
+
+.overlay {
+  max-height: calc(100vh - #{$base-spacing * 2});
+  max-width: calc(100vw - #{$base-spacing * 2});
+  background-color: $base-background-color;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-shadow: 0 0 $base-spacing black;
+  transform: translateY(100vh);
+  transition: transform $slow-duration $ease-in-cubic;
+  will-change: transform;
+}
+
+.overlay-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $small-spacing $base-spacing;
+  border-bottom: 1px solid $light-grey;
+
+  h2 {
+    font-size: modular-scale(4);
+    margin: 0;
+    color: $accent-color;
+  }
+
+  label {
+    @include size(2em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $secondary-font-color;
+    margin: 0 (-$small-spacing) 0 $small-spacing;
+    cursor: pointer;
+  }
+}
+
+.overlay-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: $base-spacing;
+
+  ul {
+    margin: 0 $small-spacing $small-spacing;
+  }
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 $small-spacing;
+
+    &::before {
+      content: "🙅‍♀️";
+      margin-right: $small-spacing;
+      font-size: modular-scale(2);
+    }
+
+    &:nth-child(1)::before { content: "🙋‍♀️"; }
+    &:nth-child(2)::before { content: "🏳️‍🌈"; }
+    &:nth-child(3)::before { content: "🚦"; }
+    &:nth-child(4)::before { content: "🤝"; }
+  }
+
+  .names {
+    font-family: $heading-font-family;
+    color: $accent-color;
+    font-size: modular-scale(3);
+  }
+
+  em {
+    font-style: normal;
+    font-weight: bold;
+  }
+}
+
+#show-overlay {
+  display: none;
+
+  &:checked {
+    + .overlay-backdrop {
+      pointer-events: auto;
+      touch-action: auto;
+      background-color: rgba(0, 0, 0, 0.75);
+
+      .overlay {
+        transform: translateY(0);
+        transition: transform $slow-duration $ease-out-cubic;
+      }
+    }
+  }
+}
