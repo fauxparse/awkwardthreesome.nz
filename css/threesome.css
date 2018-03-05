@@ -493,6 +493,7 @@ footer {
       touch-action: none; }
 
 .overlay {
+  width: 48em;
   max-height: calc(100vh - 3em);
   max-width: calc(100vw - 3em);
   background-color: #fff;

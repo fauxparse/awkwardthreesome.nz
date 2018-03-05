@@ -11,6 +11,7 @@
 }
 
 .overlay {
+  width: $max-line-width;
   max-height: calc(100vh - #{$base-spacing * 2});
   max-width: calc(100vw - #{$base-spacing * 2});
   background-color: $base-background-color;
