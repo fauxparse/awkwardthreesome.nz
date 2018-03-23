@@ -26,6 +26,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/images\/guests\/abby.jpg": {
+		"ft": 16384,
+		"iS": 19700,
+		"oA": 0,
+		"oAP": "\/images\/guests\/abby.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/images\/guests\/dan.jpg": {
 		"ft": 16384,
 		"iS": 5466,
@@ -91,6 +101,16 @@
 		"iS": 7054,
 		"oA": 0,
 		"oAP": "\/images\/guests\/laura.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/guests\/libby.jpg": {
+		"ft": 16384,
+		"iS": 7303,
+		"oA": 0,
+		"oAP": "\/images\/guests\/libby.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
