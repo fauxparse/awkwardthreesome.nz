@@ -86,6 +86,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/images\/guests\/jim.jpg": {
+		"ft": 16384,
+		"iS": 20405,
+		"oA": 0,
+		"oAP": "\/images\/guests\/jim.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/images\/guests\/jonny.jpg": {
 		"ft": 16384,
 		"iS": 14368,
