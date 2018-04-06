@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26330",
 "files": {
+	"\/.index.html.swp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.index.html.swp",
+		"oF": 0
+		},
 	"\/CNAME": {
 		"cB": 0,
 		"ft": 8192,
@@ -41,6 +48,16 @@
 		"iS": 22522,
 		"oA": 0,
 		"oAP": "\/images\/guests\/amanda.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/guests\/bri.jpg": {
+		"ft": 16384,
+		"iS": 22044,
+		"oA": 0,
+		"oAP": "\/images\/guests\/bri.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
