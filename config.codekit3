@@ -9,13 +9,6 @@
 	],
 "creatorBuild": "26330",
 "files": {
-	"\/.index.html.swp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/.index.html.swp",
-		"oF": 0
-		},
 	"\/CNAME": {
 		"cB": 0,
 		"ft": 8192,
@@ -48,6 +41,16 @@
 		"iS": 22522,
 		"oA": 0,
 		"oAP": "\/images\/guests\/amanda.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/guests\/ben.jpg": {
+		"ft": 16384,
+		"iS": 19448,
+		"oA": 0,
+		"oAP": "\/images\/guests\/ben.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -163,11 +166,51 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/images\/guests\/lliam.jpg": {
+		"ft": 16384,
+		"iS": 18934,
+		"oA": 0,
+		"oAP": "\/images\/guests\/lliam.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/guests\/maddie.jpg": {
+		"ft": 16384,
+		"iS": 19081,
+		"oA": 0,
+		"oAP": "\/images\/guests\/maddie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/images\/guests\/michelle.jpg": {
 		"ft": 16384,
 		"iS": 5666,
 		"oA": 0,
 		"oAP": "\/images\/guests\/michelle.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/guests\/rik.jpg": {
+		"ft": 16384,
+		"iS": 20188,
+		"oA": 0,
+		"oAP": "\/images\/guests\/rik.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/guests\/sophie-anna.jpg": {
+		"ft": 16384,
+		"iS": 23325,
+		"oA": 0,
+		"oAP": "\/images\/guests\/sophie-anna.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
